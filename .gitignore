@@ -1,0 +1,30 @@
+# Python
+
+**pycache**/
+*.pyc
+*.pyo
+
+# Virtual environment
+
+venv/
+.venv/
+
+# Environment files
+
+.env
+.env.*
+
+# AWS credentials
+
+.aws/
+*.pem
+
+# IDE files
+
+.vscode/
+.idea/
+
+# OS files
+
+.DS_Store
+Thumbs.db
