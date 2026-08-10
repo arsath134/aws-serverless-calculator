@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AWS Lambda Calculator</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AWS Calculator</h1>
+
+        <p class="subtitle">
+            EC2 → API Gateway → Lambda → DynamoDB
+        </p>
+
+
+        <div class="calculator">
+
+            <!-- Display -->
+
+            <div class="display">
+
+                <div
+                    id="expression"
+                    class="expression"
+                >
+                    0
+                </div>
+
+                <div
+                    id="result"
+                    class="result"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button
+                    onclick="clearCalculator()"
+                    class="clear"
+                >
+                    C
+                </button>
+
+                <button
+                    onclick="addToExpression('%')"
+                >
+                    %
+                </button>
+
+                <button
+                    onclick="addToExpression('/')"
+                >
+                    ÷
+                </button>
+
+                <button
+                    onclick="addToExpression('*')"
+                >
+                    ×
+                </button>
+
+
+                <button
+                    onclick="addToExpression('7')"
+                >
+                    7
+                </button>
+
+                <button
+                    onclick="addToExpression('8')"
+                >
+                    8
+                </button>
+
+                <button
+                    onclick="addToExpression('9')"
+                >
+                    9
+                </button>
+
+                <button
+                    onclick="addToExpression('-')"
+                >
+                    −
+                </button>
+
+
+                <button
+                    onclick="addToExpression('4')"
+                >
+                    4
+                </button>
+
+                <button
+                    onclick="addToExpression('5')"
+                >
+                    5
+                </button>
+
+                <button
+                    onclick="addToExpression('6')"
+                >
+                    6
+                </button>
+
+                <button
+                    onclick="addToExpression('+')"
+                >
+                    +
+                </button>
+
+
+                <button
+                    onclick="addToExpression('1')"
+                >
+                    1
+                </button>
+
+                <button
+                    onclick="addToExpression('2')"
+                >
+                    2
+                </button>
+
+                <button
+                    onclick="addToExpression('3')"
+                >
+                    3
+                </button>
+
+                <button
+                    onclick="addToExpression('.')"
+                >
+                    .
+                </button>
+
+
+                <button
+                    onclick="addToExpression('0')"
+                    class="zero"
+                >
+                    0
+                </button>
+
+                <button
+                    onclick="calculate()"
+                    class="equals"
+                >
+                    =
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="status"
+            class="status"
+        >
+            Ready
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
